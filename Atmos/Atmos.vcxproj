@@ -147,6 +147,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Atmos.h" />
+    <ClInclude Include="src\Atmos\Core\Application.h" />
+    <ClInclude Include="src\Atmos\Core\Log.h" />
     <ClInclude Include="src\pch.h" />
     <ClInclude Include="vendor\glm\glm\common.hpp" />
     <ClInclude Include="vendor\glm\glm\detail\_features.hpp" />
@@ -569,7 +572,9 @@
     <ClInclude Include="vendor\stb_image\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Atmos\main.cpp" />
+    <ClCompile Include="src\Atmos\Core\Application.cpp" />
+    <ClCompile Include="src\Atmos\Core\Log.cpp" />
+    <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\pch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>

@@ -104,3 +104,4 @@ project "Atmos"
 		optimize "on"
 		buildoptions "/utf-8"
 		runtime "Release"
+
