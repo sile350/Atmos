@@ -1305,6 +1305,15 @@
     <ClInclude Include="vendor\stb_image\stb_image.h">
       <Filter>vendor\stb_image</Filter>
     </ClInclude>
+    <ClInclude Include="src\Atmos\Events\Event.h" />
+    <ClInclude Include="src\Atmos\Events\KeyEvent.h" />
+    <ClInclude Include="src\Atmos\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Atmos\Events\MouseEvent.h" />
+    <ClInclude Include="src\Atmos\Core\Input.h" />
+    <ClInclude Include="src\Atmos\Core\Window.h" />
+    <ClInclude Include="src\Atmos\Renderer\GraphicsContext.h" />
+    <ClInclude Include="src\Atmos\Renderer\Renderer.h" />
+    <ClInclude Include="src\Atmos\Core\Timestep.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Atmos\Core\Application.cpp">
@@ -1322,5 +1331,9 @@
     <ClCompile Include="vendor\stb_image\stb_image.cpp">
       <Filter>vendor\stb_image</Filter>
     </ClCompile>
+    <ClCompile Include="src\Atmos\Core\Input.cpp" />
+    <ClCompile Include="src\Atmos\Core\Window.cpp" />
+    <ClCompile Include="src\Atmos\Renderer\GraphicsContext.cpp" />
+    <ClCompile Include="src\Atmos\Renderer\Renderer.cpp" />
   </ItemGroup>
 </Project>

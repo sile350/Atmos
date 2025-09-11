@@ -89,6 +89,8 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -113,6 +115,8 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -138,6 +142,8 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -147,9 +153,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Atmos\Core\Timestep.h" />
+    <ClInclude Include="src\Atmos\Renderer\Renderer.h" />
+    <ClInclude Include="src\Atmos\Renderer\GraphicsContext.h" />
     <ClInclude Include="src\Atmos.h" />
     <ClInclude Include="src\Atmos\Core\Application.h" />
+    <ClInclude Include="src\Atmos\Core\Input.h" />
     <ClInclude Include="src\Atmos\Core\Log.h" />
+    <ClInclude Include="src\Atmos\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Atmos\Events\Event.h" />
+    <ClInclude Include="src\Atmos\Events\KeyEvent.h" />
+    <ClInclude Include="src\Atmos\Events\MouseEvent.h" />
     <ClInclude Include="src\pch.h" />
     <ClInclude Include="vendor\glm\glm\common.hpp" />
     <ClInclude Include="vendor\glm\glm\detail\_features.hpp" />
@@ -570,15 +584,20 @@
     <ClInclude Include="vendor\glm\glm\vec4.hpp" />
     <ClInclude Include="vendor\glm\glm\vector_relational.hpp" />
     <ClInclude Include="vendor\stb_image\stb_image.h" />
+    <ClInclude Include="src\Atmos\Core\Window.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Atmos\Renderer\Renderer.cpp" />
+    <ClCompile Include="src\Atmos\Renderer\GraphicsContext.cpp" />
     <ClCompile Include="src\Atmos\Core\Application.cpp" />
+    <ClCompile Include="src\Atmos\Core\Input.cpp" />
     <ClCompile Include="src\Atmos\Core\Log.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\pch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="vendor\stb_image\stb_image.cpp" />
+    <ClCompile Include="src\Atmos\Core\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="vendor\GLFW\GLFW.vcxproj">

@@ -1,10 +1,13 @@
 #include "pch.h"
+#include "Atmos/Core/Application.h"
 #include "Atmos.h"
 
-int main()
+int main(int argc, char** argv)
 {
 	Log::Init();
-	Log::CoreTrace("GLFW Error ({0})", 434);
 
+	auto* app = new Application("AAA");
+	app->Run();
+	delete app;
 	return 0;
 }

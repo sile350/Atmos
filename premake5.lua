@@ -88,19 +88,16 @@ project "Atmos"
 		}
 
 	filter "configurations:Debug"
-		defines "SL_DEBUG"
 		symbols "on"
 		buildoptions "/utf-8"
 		runtime "Debug"
 
 	filter "configurations:Release"
-		defines "SL_RELEASE"
 		optimize "on"
 		buildoptions "/utf-8"
 		runtime "Release"
 
 	filter "configurations:Dist"
-		defines "SL_DIST"
 		optimize "on"
 		buildoptions "/utf-8"
 		runtime "Release"
