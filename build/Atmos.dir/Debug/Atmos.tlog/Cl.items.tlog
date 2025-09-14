@@ -1,4 +1,10 @@
 D:\Cpp Projects\Atmos\build\CMakeFiles\Atmos.dir\cmake_pch.cxx;D:\Cpp Projects\Atmos\build\Atmos.dir\Debug\cmake_pch.obj
+D:\Cpp Projects\Atmos\src\Core\Application.cpp;D:\Cpp Projects\Atmos\build\Atmos.dir\Debug\Application.obj
+D:\Cpp Projects\Atmos\src\Core\Input.cpp;D:\Cpp Projects\Atmos\build\Atmos.dir\Debug\Input.obj
+D:\Cpp Projects\Atmos\src\Core\Log.cpp;D:\Cpp Projects\Atmos\build\Atmos.dir\Debug\Log.obj
+D:\Cpp Projects\Atmos\src\Core\Window.cpp;D:\Cpp Projects\Atmos\build\Atmos.dir\Debug\Window.obj
+D:\Cpp Projects\Atmos\src\Renderer\GraphicsContext.cpp;D:\Cpp Projects\Atmos\build\Atmos.dir\Debug\GraphicsContext.obj
+D:\Cpp Projects\Atmos\src\Renderer\Renderer.cpp;D:\Cpp Projects\Atmos\build\Atmos.dir\Debug\Renderer.obj
 D:\Cpp Projects\Atmos\src\main.cpp;D:\Cpp Projects\Atmos\build\Atmos.dir\Debug\main.obj
 D:\Cpp Projects\Atmos\src\pch.cpp;D:\Cpp Projects\Atmos\build\Atmos.dir\Debug\pch.obj
 D:\Cpp Projects\Atmos\vendor\stb_image\stb_image.cpp;D:\Cpp Projects\Atmos\build\Atmos.dir\Debug\stb_image.obj

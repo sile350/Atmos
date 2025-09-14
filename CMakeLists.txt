@@ -29,7 +29,7 @@ set(INCLUDE_DIRS
 )
 
 # Source files
-file(GLOB ATMOS_SOURCES
+file(GLOB_RECURSE ATMOS_SOURCES
     "${CMAKE_SOURCE_DIR}/src/*.h"
     "${CMAKE_SOURCE_DIR}/src/*.cpp"
     "${CMAKE_SOURCE_DIR}/vendor/stb_image/*.h"
