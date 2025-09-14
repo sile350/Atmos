@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dist|x64">
+      <Configuration>Dist</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E0DD5E75-EB13-34CA-8B7F-10A978DBD232}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>Atmos</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>ClangCL</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>ClangCL</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>ClangCL</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Cpp Projects\Atmos\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Atmos.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Atmos</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Cpp Projects\Atmos\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Atmos.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Atmos</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">D:\Cpp Projects\Atmos\build\Dist\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">Atmos.dir\Dist\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">Atmos</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Cpp Projects\Atmos\src;D:\Cpp Projects\Atmos\vendor\spdlog\include;D:\Cpp Projects\Atmos\vendor\GLFW\include;D:\Cpp Projects\Atmos\vendor\glad\include;D:\Cpp Projects\Atmos\vendor\imgui;D:\Cpp Projects\Atmos\vendor\glm;D:\Cpp Projects\Atmos\vendor\stb_image;D:\Cpp Projects\Atmos\vendor\entt\include;D:\Cpp Projects\Atmos\vendor\imgui\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>D:/Cpp Projects/Atmos/build/CMakeFiles/Atmos.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>D:/Cpp Projects/Atmos/build/Atmos.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;GLFW_INCLUDE_NONE;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;GLFW_INCLUDE_NONE;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Cpp Projects\Atmos\src;D:\Cpp Projects\Atmos\vendor\spdlog\include;D:\Cpp Projects\Atmos\vendor\GLFW\include;D:\Cpp Projects\Atmos\vendor\glad\include;D:\Cpp Projects\Atmos\vendor\imgui;D:\Cpp Projects\Atmos\vendor\glm;D:\Cpp Projects\Atmos\vendor\stb_image;D:\Cpp Projects\Atmos\vendor\entt\include;D:\Cpp Projects\Atmos\vendor\imgui\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Cpp Projects\Atmos\src;D:\Cpp Projects\Atmos\vendor\spdlog\include;D:\Cpp Projects\Atmos\vendor\GLFW\include;D:\Cpp Projects\Atmos\vendor\glad\include;D:\Cpp Projects\Atmos\vendor\imgui;D:\Cpp Projects\Atmos\vendor\glm;D:\Cpp Projects\Atmos\vendor\stb_image;D:\Cpp Projects\Atmos\vendor\entt\include;D:\Cpp Projects\Atmos\vendor\imgui\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>vendor\GLFW\src\Debug\glfw3.lib;Debug\glad.lib;Debug\imgui.lib;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.26100.0\um\x64\OpenGL32.Lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Cpp Projects/Atmos/build/Debug/Atmos.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Cpp Projects/Atmos/build/Debug/Atmos.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Cpp Projects\Atmos\src;D:\Cpp Projects\Atmos\vendor\spdlog\include;D:\Cpp Projects\Atmos\vendor\GLFW\include;D:\Cpp Projects\Atmos\vendor\glad\include;D:\Cpp Projects\Atmos\vendor\imgui;D:\Cpp Projects\Atmos\vendor\glm;D:\Cpp Projects\Atmos\vendor\stb_image;D:\Cpp Projects\Atmos\vendor\entt\include;D:\Cpp Projects\Atmos\vendor\imgui\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>D:/Cpp Projects/Atmos/build/CMakeFiles/Atmos.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>D:/Cpp Projects/Atmos/build/Atmos.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;GLFW_INCLUDE_NONE;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;GLFW_INCLUDE_NONE;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Cpp Projects\Atmos\src;D:\Cpp Projects\Atmos\vendor\spdlog\include;D:\Cpp Projects\Atmos\vendor\GLFW\include;D:\Cpp Projects\Atmos\vendor\glad\include;D:\Cpp Projects\Atmos\vendor\imgui;D:\Cpp Projects\Atmos\vendor\glm;D:\Cpp Projects\Atmos\vendor\stb_image;D:\Cpp Projects\Atmos\vendor\entt\include;D:\Cpp Projects\Atmos\vendor\imgui\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Cpp Projects\Atmos\src;D:\Cpp Projects\Atmos\vendor\spdlog\include;D:\Cpp Projects\Atmos\vendor\GLFW\include;D:\Cpp Projects\Atmos\vendor\glad\include;D:\Cpp Projects\Atmos\vendor\imgui;D:\Cpp Projects\Atmos\vendor\glm;D:\Cpp Projects\Atmos\vendor\stb_image;D:\Cpp Projects\Atmos\vendor\entt\include;D:\Cpp Projects\Atmos\vendor\imgui\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>vendor\GLFW\src\Release\glfw3.lib;Release\glad.lib;Release\imgui.lib;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.26100.0\um\x64\OpenGL32.Lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Cpp Projects/Atmos/build/Release/Atmos.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Cpp Projects/Atmos/build/Release/Atmos.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Cpp Projects\Atmos\src;D:\Cpp Projects\Atmos\vendor\spdlog\include;D:\Cpp Projects\Atmos\vendor\GLFW\include;D:\Cpp Projects\Atmos\vendor\glad\include;D:\Cpp Projects\Atmos\vendor\imgui;D:\Cpp Projects\Atmos\vendor\glm;D:\Cpp Projects\Atmos\vendor\stb_image;D:\Cpp Projects\Atmos\vendor\entt\include;D:\Cpp Projects\Atmos\vendor\imgui\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>D:/Cpp Projects/Atmos/build/CMakeFiles/Atmos.dir/Dist/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>D:/Cpp Projects/Atmos/build/Atmos.dir/Dist/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;GLFW_INCLUDE_NONE;CMAKE_INTDIR="Dist"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;GLFW_INCLUDE_NONE;CMAKE_INTDIR=\"Dist\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Cpp Projects\Atmos\src;D:\Cpp Projects\Atmos\vendor\spdlog\include;D:\Cpp Projects\Atmos\vendor\GLFW\include;D:\Cpp Projects\Atmos\vendor\glad\include;D:\Cpp Projects\Atmos\vendor\imgui;D:\Cpp Projects\Atmos\vendor\glm;D:\Cpp Projects\Atmos\vendor\stb_image;D:\Cpp Projects\Atmos\vendor\entt\include;D:\Cpp Projects\Atmos\vendor\imgui\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Cpp Projects\Atmos\src;D:\Cpp Projects\Atmos\vendor\spdlog\include;D:\Cpp Projects\Atmos\vendor\GLFW\include;D:\Cpp Projects\Atmos\vendor\glad\include;D:\Cpp Projects\Atmos\vendor\imgui;D:\Cpp Projects\Atmos\vendor\glm;D:\Cpp Projects\Atmos\vendor\stb_image;D:\Cpp Projects\Atmos\vendor\entt\include;D:\Cpp Projects\Atmos\vendor\imgui\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>vendor\GLFW\src\Dist\glfw3.lib;Dist\glad.lib;Dist\imgui.lib;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.26100.0\um\x64\OpenGL32.Lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Cpp Projects/Atmos/build/Dist/Atmos.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Cpp Projects/Atmos/build/Dist/Atmos.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Cpp Projects\Atmos\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Cpp Projects/Atmos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\CMake\bin\cmake.exe "-SD:/Cpp Projects/Atmos" "-BD:/Cpp Projects/Atmos/build" --check-stamp-file "D:/Cpp Projects/Atmos/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.31\Modules\Compiler\Clang-CXX.cmake;D:\CMake\share\cmake-3.31\Modules\Compiler\Clang.cmake;D:\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\CMake\share\cmake-3.31\Modules\Internal\CMakeRCLinkerInformation.cmake;D:\CMake\share\cmake-3.31\Modules\Linker\GNU.cmake;D:\CMake\share\cmake-3.31\Modules\Linker\LLD-CXX.cmake;D:\CMake\share\cmake-3.31\Modules\Linker\LLD.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-LLD-CXX.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-LLD.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows-Clang-CXX.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows-Clang.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;D:\Cpp Projects\Atmos\build\CMakeFiles\3.31.0-rc2\CMakeCXXCompiler.cmake;D:\Cpp Projects\Atmos\build\CMakeFiles\3.31.0-rc2\CMakeRCCompiler.cmake;D:\Cpp Projects\Atmos\build\CMakeFiles\3.31.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Cpp Projects\Atmos\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Cpp Projects/Atmos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\CMake\bin\cmake.exe "-SD:/Cpp Projects/Atmos" "-BD:/Cpp Projects/Atmos/build" --check-stamp-file "D:/Cpp Projects/Atmos/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.31\Modules\Compiler\Clang-CXX.cmake;D:\CMake\share\cmake-3.31\Modules\Compiler\Clang.cmake;D:\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\CMake\share\cmake-3.31\Modules\Internal\CMakeRCLinkerInformation.cmake;D:\CMake\share\cmake-3.31\Modules\Linker\GNU.cmake;D:\CMake\share\cmake-3.31\Modules\Linker\LLD-CXX.cmake;D:\CMake\share\cmake-3.31\Modules\Linker\LLD.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-LLD-CXX.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-LLD.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows-Clang-CXX.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows-Clang.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;D:\Cpp Projects\Atmos\build\CMakeFiles\3.31.0-rc2\CMakeCXXCompiler.cmake;D:\Cpp Projects\Atmos\build\CMakeFiles\3.31.0-rc2\CMakeRCCompiler.cmake;D:\Cpp Projects\Atmos\build\CMakeFiles\3.31.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Cpp Projects\Atmos\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">Building Custom Rule D:/Cpp Projects/Atmos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">setlocal
+D:\CMake\bin\cmake.exe "-SD:/Cpp Projects/Atmos" "-BD:/Cpp Projects/Atmos/build" --check-stamp-file "D:/Cpp Projects/Atmos/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">D:\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.31\Modules\Compiler\Clang-CXX.cmake;D:\CMake\share\cmake-3.31\Modules\Compiler\Clang.cmake;D:\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\CMake\share\cmake-3.31\Modules\Internal\CMakeRCLinkerInformation.cmake;D:\CMake\share\cmake-3.31\Modules\Linker\GNU.cmake;D:\CMake\share\cmake-3.31\Modules\Linker\LLD-CXX.cmake;D:\CMake\share\cmake-3.31\Modules\Linker\LLD.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-LLD-CXX.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-LLD.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows-Clang-CXX.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows-Clang.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;D:\Cpp Projects\Atmos\build\CMakeFiles\3.31.0-rc2\CMakeCXXCompiler.cmake;D:\Cpp Projects\Atmos\build\CMakeFiles\3.31.0-rc2\CMakeRCCompiler.cmake;D:\Cpp Projects\Atmos\build\CMakeFiles\3.31.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">D:\Cpp Projects\Atmos\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Cpp Projects\Atmos\build\CMakeFiles\Atmos.dir\cmake_pch.cxx">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Cpp Projects/Atmos/build/CMakeFiles/Atmos.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Cpp Projects/Atmos/build/CMakeFiles/Atmos.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Cpp Projects/Atmos/build/Atmos.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cpp Projects/Atmos/build/CMakeFiles/Atmos.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cpp Projects/Atmos/build/CMakeFiles/Atmos.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cpp Projects/Atmos/build/Atmos.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">D:/Cpp Projects/Atmos/build/CMakeFiles/Atmos.dir/Dist/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">D:/Cpp Projects/Atmos/build/CMakeFiles/Atmos.dir/Dist/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">D:/Cpp Projects/Atmos/build/Atmos.dir/Dist/cmake_pch.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="D:\Cpp Projects\Atmos\src\main.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Cpp Projects/Atmos/build/CMakeFiles/Atmos.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cpp Projects/Atmos/build/CMakeFiles/Atmos.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">D:/Cpp Projects/Atmos/build/CMakeFiles/Atmos.dir/Dist/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cpp Projects\Atmos\src\pch.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Cpp Projects/Atmos/build/CMakeFiles/Atmos.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cpp Projects/Atmos/build/CMakeFiles/Atmos.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">D:/Cpp Projects/Atmos/build/CMakeFiles/Atmos.dir/Dist/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="D:\Cpp Projects\Atmos\src\pch.h" />
+    <ClInclude Include="D:\Cpp Projects\Atmos\vendor\glm\glm\common.hpp" />
+    <ClInclude Include="D:\Cpp Projects\Atmos\vendor\glm\glm\exponential.hpp" />
+    <ClInclude Include="D:\Cpp Projects\Atmos\vendor\glm\glm\ext.hpp" />
+    <ClInclude Include="D:\Cpp Projects\Atmos\vendor\glm\glm\fwd.hpp" />
+    <ClInclude Include="D:\Cpp Projects\Atmos\vendor\glm\glm\geometric.hpp" />
+    <ClInclude Include="D:\Cpp Projects\Atmos\vendor\glm\glm\glm.hpp" />
+    <ClInclude Include="D:\Cpp Projects\Atmos\vendor\glm\glm\integer.hpp" />
+    <ClInclude Include="D:\Cpp Projects\Atmos\vendor\glm\glm\mat2x2.hpp" />
+    <ClInclude Include="D:\Cpp Projects\Atmos\vendor\glm\glm\mat2x3.hpp" />
+    <ClInclude Include="D:\Cpp Projects\Atmos\vendor\glm\glm\mat2x4.hpp" />
+    <ClInclude Include="D:\Cpp Projects\Atmos\vendor\glm\glm\mat3x2.hpp" />
+    <ClInclude Include="D:\Cpp Projects\Atmos\vendor\glm\glm\mat3x3.hpp" />
+    <ClInclude Include="D:\Cpp Projects\Atmos\vendor\glm\glm\mat3x4.hpp" />
+    <ClInclude Include="D:\Cpp Projects\Atmos\vendor\glm\glm\mat4x2.hpp" />
+    <ClInclude Include="D:\Cpp Projects\Atmos\vendor\glm\glm\mat4x3.hpp" />
+    <ClInclude Include="D:\Cpp Projects\Atmos\vendor\glm\glm\mat4x4.hpp" />
+    <ClInclude Include="D:\Cpp Projects\Atmos\vendor\glm\glm\matrix.hpp" />
+    <ClInclude Include="D:\Cpp Projects\Atmos\vendor\glm\glm\packing.hpp" />
+    <ClInclude Include="D:\Cpp Projects\Atmos\vendor\glm\glm\trigonometric.hpp" />
+    <ClInclude Include="D:\Cpp Projects\Atmos\vendor\glm\glm\vec2.hpp" />
+    <ClInclude Include="D:\Cpp Projects\Atmos\vendor\glm\glm\vec3.hpp" />
+    <ClInclude Include="D:\Cpp Projects\Atmos\vendor\glm\glm\vec4.hpp" />
+    <ClInclude Include="D:\Cpp Projects\Atmos\vendor\glm\glm\vector_relational.hpp" />
+    <ClCompile Include="D:\Cpp Projects\Atmos\vendor\stb_image\stb_image.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Cpp Projects/Atmos/build/CMakeFiles/Atmos.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cpp Projects/Atmos/build/CMakeFiles/Atmos.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">D:/Cpp Projects/Atmos/build/CMakeFiles/Atmos.dir/Dist/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="D:\Cpp Projects\Atmos\vendor\stb_image\stb_image.h" />
+    <ClInclude Include="D:\Cpp Projects\Atmos\build\CMakeFiles\Atmos.dir\Debug\cmake_pch.hxx" />
+    <ClInclude Include="D:\Cpp Projects\Atmos\build\CMakeFiles\Atmos.dir\Release\cmake_pch.hxx" />
+    <ClInclude Include="D:\Cpp Projects\Atmos\build\CMakeFiles\Atmos.dir\Dist\cmake_pch.hxx" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\Cpp Projects\Atmos\build\ZERO_CHECK.vcxproj">
+      <Project>{BB10719D-1D96-3161-8E4A-258DF32EB9AC}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Cpp Projects\Atmos\build\glad.vcxproj">
+      <Project>{C9DA901F-E532-3FEA-AF68-620E8BDC1BD3}</Project>
+      <Name>glad</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Cpp Projects\Atmos\build\vendor\GLFW\src\glfw.vcxproj">
+      <Project>{9A8C54FD-99A2-3B72-B3C6-D1CC79D58BFE}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Cpp Projects\Atmos\build\imgui.vcxproj">
+      <Project>{B5846DEA-7FF4-3E18-B78D-8DDA0C3DFE7C}</Project>
+      <Name>imgui</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

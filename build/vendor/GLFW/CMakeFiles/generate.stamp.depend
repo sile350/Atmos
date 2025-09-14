@@ -1,0 +1,30 @@
+# CMake generation dependency list for this directory.
+D:/CMake/share/cmake-3.31/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+D:/CMake/share/cmake-3.31/Modules/CMakeCInformation.cmake
+D:/CMake/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake
+D:/CMake/share/cmake-3.31/Modules/CMakeDependentOption.cmake
+D:/CMake/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake
+D:/CMake/share/cmake-3.31/Modules/CMakePackageConfigHelpers.cmake
+D:/CMake/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake
+D:/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake
+D:/CMake/share/cmake-3.31/Modules/CheckLibraryExists.cmake
+D:/CMake/share/cmake-3.31/Modules/Compiler/Clang-C.cmake
+D:/CMake/share/cmake-3.31/Modules/Compiler/Clang.cmake
+D:/CMake/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake
+D:/CMake/share/cmake-3.31/Modules/FindPackageMessage.cmake
+D:/CMake/share/cmake-3.31/Modules/FindThreads.cmake
+D:/CMake/share/cmake-3.31/Modules/GNUInstallDirs.cmake
+D:/CMake/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake
+D:/CMake/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake
+D:/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake
+D:/CMake/share/cmake-3.31/Modules/Linker/LLD-C.cmake
+D:/CMake/share/cmake-3.31/Modules/Linker/LLD.cmake
+D:/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-LLD-C.cmake
+D:/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-LLD.cmake
+D:/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-MSVC.cmake
+D:/CMake/share/cmake-3.31/Modules/Platform/Windows-Clang-C.cmake
+D:/CMake/share/cmake-3.31/Modules/Platform/Windows-Clang.cmake
+D:/CMake/share/cmake-3.31/Modules/WriteBasicConfigVersionFile.cmake
+D:/Cpp Projects/Atmos/build/CMakeFiles/3.31.0-rc2/CMakeCCompiler.cmake
+D:/Cpp Projects/Atmos/vendor/GLFW/CMake/glfw3Config.cmake.in
+D:/Cpp Projects/Atmos/vendor/GLFW/CMakeLists.txt

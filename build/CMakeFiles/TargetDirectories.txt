@@ -1,0 +1,8 @@
+D:/Cpp Projects/Atmos/build/CMakeFiles/glad.dir
+D:/Cpp Projects/Atmos/build/CMakeFiles/imgui.dir
+D:/Cpp Projects/Atmos/build/CMakeFiles/Atmos.dir
+D:/Cpp Projects/Atmos/build/CMakeFiles/ALL_BUILD.dir
+D:/Cpp Projects/Atmos/build/CMakeFiles/ZERO_CHECK.dir
+D:/Cpp Projects/Atmos/build/vendor/GLFW/CMakeFiles/ALL_BUILD.dir
+D:/Cpp Projects/Atmos/build/vendor/GLFW/src/CMakeFiles/glfw.dir
+D:/Cpp Projects/Atmos/build/vendor/GLFW/src/CMakeFiles/update_mappings.dir

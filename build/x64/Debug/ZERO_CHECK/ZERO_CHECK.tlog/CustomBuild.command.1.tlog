@@ -1,0 +1,10 @@
+^D:\CPP PROJECTS\ATMOS\BUILD\CMAKEFILES\59360DB6D1D6C221A27BBD73A28E04CF\GENERATE.STAMP.RULE
+setlocal
+D:\CMake\bin\cmake.exe "-SD:/Cpp Projects/Atmos" "-BD:/Cpp Projects/Atmos/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/Cpp Projects/Atmos/build/Atmos.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

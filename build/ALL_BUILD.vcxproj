@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dist|x64">
+      <Configuration>Dist</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5BE19EBE-4C3A-38EA-BB83-658286EA5F33}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>ClangCL</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>ClangCL</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>ClangCL</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Cpp Projects\Atmos\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Cpp Projects/Atmos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\CMake\bin\cmake.exe "-SD:/Cpp Projects/Atmos" "-BD:/Cpp Projects/Atmos/build" --check-stamp-file "D:/Cpp Projects/Atmos/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.31\Modules\Compiler\Clang-CXX.cmake;D:\CMake\share\cmake-3.31\Modules\Compiler\Clang.cmake;D:\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\CMake\share\cmake-3.31\Modules\Internal\CMakeRCLinkerInformation.cmake;D:\CMake\share\cmake-3.31\Modules\Linker\GNU.cmake;D:\CMake\share\cmake-3.31\Modules\Linker\LLD-CXX.cmake;D:\CMake\share\cmake-3.31\Modules\Linker\LLD.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-LLD-CXX.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-LLD.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows-Clang-CXX.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows-Clang.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;D:\Cpp Projects\Atmos\build\CMakeFiles\3.31.0-rc2\CMakeCXXCompiler.cmake;D:\Cpp Projects\Atmos\build\CMakeFiles\3.31.0-rc2\CMakeRCCompiler.cmake;D:\Cpp Projects\Atmos\build\CMakeFiles\3.31.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Cpp Projects\Atmos\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Cpp Projects/Atmos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\CMake\bin\cmake.exe "-SD:/Cpp Projects/Atmos" "-BD:/Cpp Projects/Atmos/build" --check-stamp-file "D:/Cpp Projects/Atmos/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.31\Modules\Compiler\Clang-CXX.cmake;D:\CMake\share\cmake-3.31\Modules\Compiler\Clang.cmake;D:\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\CMake\share\cmake-3.31\Modules\Internal\CMakeRCLinkerInformation.cmake;D:\CMake\share\cmake-3.31\Modules\Linker\GNU.cmake;D:\CMake\share\cmake-3.31\Modules\Linker\LLD-CXX.cmake;D:\CMake\share\cmake-3.31\Modules\Linker\LLD.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-LLD-CXX.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-LLD.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows-Clang-CXX.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows-Clang.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;D:\Cpp Projects\Atmos\build\CMakeFiles\3.31.0-rc2\CMakeCXXCompiler.cmake;D:\Cpp Projects\Atmos\build\CMakeFiles\3.31.0-rc2\CMakeRCCompiler.cmake;D:\Cpp Projects\Atmos\build\CMakeFiles\3.31.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Cpp Projects\Atmos\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">Building Custom Rule D:/Cpp Projects/Atmos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">setlocal
+D:\CMake\bin\cmake.exe "-SD:/Cpp Projects/Atmos" "-BD:/Cpp Projects/Atmos/build" --check-stamp-file "D:/Cpp Projects/Atmos/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">D:\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.31\Modules\Compiler\Clang-CXX.cmake;D:\CMake\share\cmake-3.31\Modules\Compiler\Clang.cmake;D:\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\CMake\share\cmake-3.31\Modules\Internal\CMakeRCLinkerInformation.cmake;D:\CMake\share\cmake-3.31\Modules\Linker\GNU.cmake;D:\CMake\share\cmake-3.31\Modules\Linker\LLD-CXX.cmake;D:\CMake\share\cmake-3.31\Modules\Linker\LLD.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-LLD-CXX.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-LLD.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows-Clang-CXX.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows-Clang.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;D:\Cpp Projects\Atmos\build\CMakeFiles\3.31.0-rc2\CMakeCXXCompiler.cmake;D:\Cpp Projects\Atmos\build\CMakeFiles\3.31.0-rc2\CMakeRCCompiler.cmake;D:\Cpp Projects\Atmos\build\CMakeFiles\3.31.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">D:\Cpp Projects\Atmos\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\Cpp Projects\Atmos\build\ZERO_CHECK.vcxproj">
+      <Project>{BB10719D-1D96-3161-8E4A-258DF32EB9AC}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Cpp Projects\Atmos\build\Atmos.vcxproj">
+      <Project>{E0DD5E75-EB13-34CA-8B7F-10A978DBD232}</Project>
+      <Name>Atmos</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Cpp Projects\Atmos\build\glad.vcxproj">
+      <Project>{C9DA901F-E532-3FEA-AF68-620E8BDC1BD3}</Project>
+      <Name>glad</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Cpp Projects\Atmos\build\vendor\GLFW\src\glfw.vcxproj">
+      <Project>{9A8C54FD-99A2-3B72-B3C6-D1CC79D58BFE}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Cpp Projects\Atmos\build\imgui.vcxproj">
+      <Project>{B5846DEA-7FF4-3E18-B78D-8DDA0C3DFE7C}</Project>
+      <Name>imgui</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

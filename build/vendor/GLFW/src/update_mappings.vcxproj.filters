@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Cpp Projects\Atmos\build\CMakeFiles\745a7d480e60aa6ca7496701e5d79fc5\update_mappings.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Cpp Projects\Atmos\vendor\GLFW\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Cpp Projects\Atmos\vendor\GLFW\src\mappings.h.in">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Cpp Projects\Atmos\vendor\GLFW\CMake\GenerateMappings.cmake" />
+    <None Include="D:\Cpp Projects\Atmos\build\vendor\GLFW\src\CMakeFiles\update_mappings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{9E83F582-C58A-3E90-9F38-3288D6CEBBD8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{13ED3F7D-0536-3DBF-BC42-DF94251E5E6C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
