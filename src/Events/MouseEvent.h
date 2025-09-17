@@ -20,7 +20,7 @@ public:
 
 	static EventType GetStaticType() { return EventType::MouseMoved; }
 	virtual EventType GetEventType() const override { return GetStaticType(); }
-	virtual const char* GetName() const override { return "MouseMoved"; }
+	virtual std::string GetName() const override { return "MouseMoved"; }
 
 	virtual int GetCategoryFlags() const override { return EventCategoryMouse | EventCategoryInput; }
 private:
@@ -45,7 +45,7 @@ public:
 
 	static EventType GetStaticType() { return EventType::MouseScrolled; }
 	virtual EventType GetEventType() const override { return GetStaticType(); }
-	virtual const char* GetName() const override { return "MouseScrolled"; }
+	virtual std::string GetName() const override { return "MouseScrolled"; }
 
 	virtual int GetCategoryFlags() const override { return EventCategoryMouse | EventCategoryInput; }
 
@@ -81,7 +81,7 @@ public:
 
 	static EventType GetStaticType() { return EventType::MouseButtonPressed; }
 	virtual EventType GetEventType() const override { return GetStaticType(); }
-	virtual const char* GetName() const override { return "MouseButtonPressed"; }
+	virtual std::string GetName() const override { return "MouseButtonPressed"; }
 };
 
 class MouseButtonReleasedEvent : public MouseButtonEvent
@@ -99,5 +99,5 @@ public:
 
 	static EventType GetStaticType() { return EventType::MouseButtonReleased; }
 	virtual EventType GetEventType() const override { return GetStaticType(); }
-	virtual const char* GetName() const override { return "MouseButtonReleased"; }
+	virtual std::string GetName() const override { return "MouseButtonReleased"; }
 };

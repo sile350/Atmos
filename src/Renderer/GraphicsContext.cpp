@@ -13,7 +13,7 @@ GraphicsContext::GraphicsContext(GLFWwindow* windowHandle)
 void GraphicsContext::Init()
 {
     glfwMakeContextCurrent(m_WindowHandle);
-    int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
+    gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
 }
 
 void GraphicsContext::SwapBuffers()
@@ -21,7 +21,7 @@ void GraphicsContext::SwapBuffers()
     glfwSwapBuffers(m_WindowHandle);
 }
 
-std::unique_ptr<GraphicsContext> GraphicsContext::Create(void* window)
+std::unique_ptr<GraphicsContext> GraphicsContext::Create(GLFWwindow* window)
 {
-    return std::make_unique<GraphicsContext>(static_cast<GLFWwindow*>(window));
+    return std::make_unique<GraphicsContext>(window);
 }

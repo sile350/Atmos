@@ -4,8 +4,6 @@
 #include "Events/Event.h"
 #include <GLFW/glfw3.h>
 
-using EventCallbackFn = std::function<void(Event&)>;
-
 class Window
 {
 public:
@@ -15,18 +13,15 @@ public:
 		uint32_t Width, Height;
 		bool VSync;
 
-		EventCallbackFn EventCallback;
+		std::function<void(Event&)> EventCallback;
 
 		WindowData(const std::string& title = "Atmos",
 			uint32_t width = 1280,
 			uint32_t height = 720)
-			: Title(title), Width(width), Height(height)
-		{
-		}
+			: Title(title), Width(width), Height(height) {}
 	};
 
 public:
-
 	Window(const WindowData& data);
 	~Window();
 
@@ -36,17 +31,17 @@ public:
 	uint32_t GetHeight() const { return m_Data.Height; }
 
 	// Window attributes
-	void SetEventCallback(const EventCallbackFn& callback) { m_Data.EventCallback = callback; }
+	void SetEventCallback(const std::function<void(Event&)>& callback) { m_Data.EventCallback = callback; }
 	void SetVSync(bool enabled);
 	bool IsVSync() const;
 
-	virtual void* GetNativeWindow() const { return m_Window; }
+	GLFWwindow* GetNativeWindow() const { return m_Window; }
 
 	static std::unique_ptr<Window> Create(const WindowData& data = WindowData());
 
 private:
-	virtual void Init(const WindowData& data);
-	virtual void Shutdown();
+	void Init(const WindowData& data);
+	void Shutdown();
 private:
 	GLFWwindow* m_Window;
 	std::unique_ptr<GraphicsContext> m_Context;

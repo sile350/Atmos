@@ -28,10 +28,9 @@ void Application::Close()
 
 void Application::OnProcessEvent(Event& e)
 {
-
 	EventDispatcher dispatcher(e);
-	dispatcher.Dispatch<WindowCloseEvent>((std::bind(&Application::OnWindowClose, this, std::placeholders::_1)));
-	dispatcher.Dispatch<WindowResizeEvent>((std::bind(&Application::OnWindowResize, this, std::placeholders::_1)));
+	dispatcher.Dispatch<WindowCloseEvent>(std::bind(&Application::OnWindowClose, this, std::placeholders::_1));
+	dispatcher.Dispatch<WindowResizeEvent>(std::bind(&Application::OnWindowResize, this, std::placeholders::_1));
 
 	OnEvent(e);
 }
@@ -85,7 +84,7 @@ bool Application::OnWindowResize(WindowResizeEvent& e)
 
 void Application::OnUpdate(Timestep ts)
 {
-	Renderer::SetClearColor({ 1.0f, 0.1f, 0.1f, 1 });
+	Renderer::SetClearColor({ 1.0f, 0.1f, 0.1f, 1.0f });
 	Renderer::Clear();
 }
 

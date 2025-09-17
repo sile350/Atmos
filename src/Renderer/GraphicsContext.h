@@ -11,7 +11,7 @@ public:
 	void Init();
 	void SwapBuffers();
 
-	static std::unique_ptr<GraphicsContext> Create(void* window);
+	static std::unique_ptr<GraphicsContext> Create(GLFWwindow* window);
 private:
 	GLFWwindow* m_WindowHandle;
 };

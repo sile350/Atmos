@@ -78,9 +78,9 @@ target_link_libraries(Atmos PRIVATE
 )
 
 target_compile_options(Atmos PRIVATE
-    $<$<CONFIG:Debug>:/utf-8>
-    $<$<CONFIG:Release>:/utf-8 /O2>
-    $<$<CONFIG:Dist>:/utf-8 /O2>
+    $<$<CONFIG:Debug>:/W4 /utf-8>
+    $<$<CONFIG:Release>:/W4 /utf-8 /O2>
+    $<$<CONFIG:Dist>:/W4 /utf-8 /O2>
 )
 
 # Enable parallel compilation

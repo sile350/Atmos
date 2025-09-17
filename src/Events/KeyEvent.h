@@ -31,7 +31,7 @@ public:
 
 	static EventType GetStaticType() { return EventType::KeyPressed; }
 	virtual EventType GetEventType() const override { return GetStaticType(); }
-	virtual const char* GetName() const override { return "KeyPressed"; }
+	virtual std::string GetName() const override { return "KeyPressed"; }
 
 private:
 	int m_RepeatCount;
@@ -51,7 +51,7 @@ public:
 	}
 	static EventType GetStaticType() { return EventType::KeyReleased; }
 	virtual EventType GetEventType() const override { return GetStaticType(); }
-	virtual const char* GetName() const override { return "KeyReleased"; }
+	virtual std::string GetName() const override { return "KeyReleased"; }
 };
 
 class KeyTypedEvent : public KeyEvent
@@ -69,5 +69,5 @@ public:
 
 	static EventType GetStaticType() { return EventType::KeyTyped; }
 	virtual EventType GetEventType() const override { return GetStaticType(); }
-	virtual const char* GetName() const override { return "KeyTyped"; }
+	virtual std::string GetName() const override { return "KeyTyped"; }
 };
