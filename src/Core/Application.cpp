@@ -14,6 +14,8 @@ Application::Application(const std::string& name)
 	m_Window->SetEventCallback(std::bind(&Application::OnProcessEvent, this, std::placeholders::_1));
 
 	Renderer::Init();
+
+	m_ImGuiLayer = std::make_unique<ImGuiLayer>();
 }
 
 Application::~Application()
@@ -45,17 +47,11 @@ void Application::Run()
 
 		if (!m_Minimized)
 		{
-
 			OnUpdate(timestep);
 
-			/*m_ImGuiLayer->Begin();
-			{
-				SL_PROFILE_SCOPE("LayerStack OnImGuiRender");
-
-				for (Layer* layer : m_LayerStack)
-					layer->OnImGuiRender();
-			}
-			m_ImGuiLayer->End();*/
+			m_ImGuiLayer->Begin();
+			m_ImGuiLayer->Render();
+			m_ImGuiLayer->End();
 		}
 
 		m_Window->OnUpdate();
@@ -90,4 +86,5 @@ void Application::OnUpdate(Timestep ts)
 
 void Application::OnEvent(Event& e)
 {
+	m_ImGuiLayer->OnEvent(e);
 }

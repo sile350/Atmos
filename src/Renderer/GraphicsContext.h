@@ -1,5 +1,6 @@
 #pragma once
 
+#include "Core/Log.h"
 #include <GLFW/glfw3.h>
 
 class GraphicsContext
