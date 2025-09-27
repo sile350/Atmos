@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 
-set(CMAKE_CONFIGURATION_TYPES "Debug;Release;Dist" CACHE STRING "Configuration types" FORCE)
+set(CMAKE_CONFIGURATION_TYPES "Debug;Release" CACHE STRING "Configuration types" FORCE)
 
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
@@ -55,6 +55,7 @@ add_library(imgui STATIC
 )
 
 target_include_directories(imgui PUBLIC
+    ${CMAKE_SOURCE_DIR}/vendor/GLFW/include
     ${IMGUI_DIR}
     ${IMGUI_DIR}/backends
 )
@@ -80,13 +81,10 @@ target_link_libraries(Atmos PRIVATE
 target_compile_options(Atmos PRIVATE
     $<$<CONFIG:Debug>:/W4 /utf-8>
     $<$<CONFIG:Release>:/W4 /utf-8 /O2>
-    $<$<CONFIG:Dist>:/W4 /utf-8 /O2>
 )
 
 # Enable parallel compilation
-if(MSVC)
-    target_compile_options(Atmos PRIVATE /MP)
-endif()
+
 
 #PCH
 target_precompile_headers(Atmos PRIVATE "$<$<COMPILE_LANGUAGE:CXX>:${CMAKE_CURRENT_SOURCE_DIR}/src/pch.h>")
