@@ -1,2 +1,2 @@
 # Atmos
-Voxel editor: OpenGL and .......
+Voxel editor: OpenGL
