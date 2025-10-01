@@ -15,9 +15,7 @@ public:
 
 		std::function<void(Event&)> EventCallback;
 
-		WindowData(const std::string& title = "Atmos",
-			uint32_t width = 1280,
-			uint32_t height = 720)
+		WindowData(const std::string& title = "Atmos", uint32_t width = 1280, uint32_t height = 720)
 			: Title(title), Width(width), Height(height) {}
 	};
 

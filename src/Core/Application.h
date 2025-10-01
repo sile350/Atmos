@@ -20,7 +20,7 @@ public:
 	void Close();
 
 	static Application& Get() { return *s_Instance; }
-	//std::unique_ptr<ImGuiLayer> GetImGuiLayer() { return m_ImGuiLayer; }
+	std::unique_ptr<ImGuiLayer>& GetImGuiLayer() { return m_ImGuiLayer; }
 
 	void Run();
 	bool OnWindowClose(WindowCloseEvent& e);

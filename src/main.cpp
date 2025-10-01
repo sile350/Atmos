@@ -4,8 +4,8 @@
 int main(int argc, char** argv)
 {
 	Log::Init();
-	auto* app = new Application("AAA");
+	auto app = std::make_unique<Application>("AAA");
 	app->Run();
-	delete app;
+
 	return 0;
 }

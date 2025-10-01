@@ -7,8 +7,7 @@ class GraphicsContext
 {
 public:
 	GraphicsContext(GLFWwindow* windowHandle);
-	~GraphicsContext() = default;
-
+	~GraphicsContext() { if (m_WindowHandle) glfwMakeContextCurrent(nullptr); }
 	void Init();
 	void SwapBuffers();
 
